@@ -1,0 +1,9 @@
+package leaving_Emp;
+
+public interface LeaveRecord {
+    String getFirst_name();
+    String getLast_name();
+    String getEmp_id();
+    String getEmail();
+    String getReason();
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  
+   <servlet>
+   <servlet-name>leavingServlet</servlet-name>
+   <servlet-class>leaving_Emp.leavingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>leavingServlet</servlet-name>
+   <url-pattern>/leaving</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LeavingInsertServlet</servlet-name>
+  	<servlet-class>leaving_Emp.LeavingInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LeavingInsertServlet</servlet-name>
+  	<url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateDetailsServlet</servlet-name>
+  	<servlet-class>leaving_Emp.UpdateDetailsServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>UpdateDetailsServlet</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteEmpServlet</servlet-name>
+  	<servlet-class>leaving_Emp.DeleteEmpServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>DeleteEmpServlet</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

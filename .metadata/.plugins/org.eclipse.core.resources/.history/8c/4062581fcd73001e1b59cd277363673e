@@ -1,0 +1,94 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Leaving Form Details</title>
+<link rel="stylesheet" href="Leaving.css"> 
+  
+  <script type="text/javascript">
+
+function validateForm() {
+	  //javascript validation
+	  
+	  var emailInput= document.getElementsByName('validationEmail').value;
+	  var userIDInput= document.getElementsByName('validationEmployeeID').value;
+	  var reasonInput= document.getElementsByName('validationreason').value;
+	  
+	  if (emailInput == '' ||userIDInput == '' || reasonInput == '')
+	  {
+		  alert ('These fields are required');
+	  return false;
+	  
+	}
+	
+}
+</script>
+  
+</head>
+<body>
+
+<div class="header">
+  <h1>Leaving Form Details</h1>
+</div>
+
+<form name="myForm" action="insert" onsubmit="return validateForm();" method="post">
+ <div class= "form-container">
+ <div class="form-group">
+ <div class="form-floating mb-3">
+<b> First Name</b> <input type="text" name= "FirstName">
+</div>
+<br>
+
+<div class="form-floating">
+ <b> Last Name </b> <input type="text" name= "LastName">
+</div>
+<br>
+
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label"> <b>Employee ID </b></label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend"></span>
+      <input type="text" class="form-control" id="validationEmployeeID" aria-describedby="inputGroupPrepend" name="IdValidation"required>
+      <div class="invalid-feedback">
+        Please enter valid Employee ID!
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  
+  <div class="form-floating mb-3">
+  <b> Email </b>
+  <input type="email" class="form-control" id="validationEmail" placeholder="name@example.com" aria-describedby="inputGroupPrepend" name="EmailValidation" required>
+      <span class="input-group-text" id="inputGroupPrepend"></span>
+      <div class="invalid-feedback">
+        Please enter a valid Email!
+      </div>
+</div>
+<br>
+
+ <div class="form-floating mb-3">
+  <b> Enter the reason </b>
+  <input type="text" class="form-control" id="validationreason" placeholder=" " aria-describedby="inputGroupPrepend" name="reason" required  >
+  <span class="input-group-text" id="inputGroupPrepend"></span>
+      <div class="invalid-feedback">
+        Please enter the reason!
+      </div>
+</div>
+  <br>
+  
+ 
+  <div class="col-12">
+    <button class="btn-primary" type=submit  value="submit"> <b>Submit form </b></button>
+  </div>
+  </div>
+  </div>
+</form> 
+
+
+
+
+</body>
+</html>

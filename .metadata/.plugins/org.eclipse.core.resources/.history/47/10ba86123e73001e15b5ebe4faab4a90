@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(116, 169, 222); /* Light Blue background */
+    text-align: center;
+}
+
+h1 {
+    color: rgb(0, 64, 128); /* Dark Blue text color */
+}
+

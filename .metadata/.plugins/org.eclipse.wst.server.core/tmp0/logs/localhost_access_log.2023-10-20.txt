@@ -1,0 +1,5 @@
+127.0.0.1 - - [20/Oct/2023:18:41:43 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Oct/2023:18:41:55 +0530] "GET /LeavingEmp/LeavingInsert.jsp HTTP/1.1" 200 2518
+0:0:0:0:0:0:0:1 - - [20/Oct/2023:18:41:55 +0530] "GET /LeavingEmp/Leaving.css HTTP/1.1" 200 1012
+0:0:0:0:0:0:0:1 - - [20/Oct/2023:18:41:56 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [20/Oct/2023:19:33:17 +0530] "GET /LeavingEmp/LeavingInsert.jsp HTTP/1.1" 200 2518

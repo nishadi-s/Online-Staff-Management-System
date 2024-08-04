@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(128, 128, 255); /* Background color */
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 160); /* Blue theme color */
+  color: #ffffff; /* Text color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.show-popup {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

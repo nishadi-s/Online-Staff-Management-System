@@ -1,0 +1,5 @@
+package leaving_Emp;
+
+public interface LeaveRecord {
+
+}

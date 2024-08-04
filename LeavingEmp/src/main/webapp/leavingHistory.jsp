@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Leaving History</title>
+<link rel="stylesheet" href="deleteEmp.css"> 
+</head>
+<body>
+
+<form action="leaving" method= "post">
+
+Employee ID <input type="number" name= "uid"> <br>
+Email <input type ="email" name="email" > <br>
+
+<input type="submit" name ="submit" value="Show previous records">
+</form>
+
+
+</body>
+</html>
